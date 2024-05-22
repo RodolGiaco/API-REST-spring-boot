@@ -1,4 +1,4 @@
-package com.kube.rodo.kube;
+package com.kube.rodo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

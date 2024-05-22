@@ -1,4 +1,4 @@
-package com.kube.rodo.kube;
+package com.kube.rodo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
