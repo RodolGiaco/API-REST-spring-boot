@@ -20,7 +20,10 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 @RestController
 @RequestMapping("/clients")
 public class ClientRestController {
-    private List<Client> clients = new ArrayList(Arrays.asList(new Client("rodo", "1234", "Rodolfo"), new Client("ari", "1234", "Ariel"), new Client("giaco", "1234", "Giacomodonatto")));
+    private List<Client> clients = new ArrayList(Arrays.asList(
+            new Client("rodo", "1234", "Rodolfo"),
+            new Client("ari", "1234", "Ariel"),
+            new Client("giaco", "1234", "Giacomodonatto")));
 
     public ClientRestController() {
     }
