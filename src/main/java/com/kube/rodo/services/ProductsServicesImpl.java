@@ -1,14 +1,19 @@
 package com.kube.rodo.services;
 
 import com.kube.rodo.domain.Product;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+@Slf4j
 @Lazy
+@Primary
 @Service("MEMORY")
 @ConditionalOnProperty(
         value="products.strategy",
@@ -24,6 +29,6 @@ public class ProductsServicesImpl implements ProductService {
         return product;
     }
     public ProductsServicesImpl(){
-        System.out.println("Create object ProductsServicesImpl");
+        log.info("ProductsServicesImpl initialized");
     }
 }

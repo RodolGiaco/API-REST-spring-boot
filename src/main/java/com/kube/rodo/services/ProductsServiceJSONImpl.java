@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
-@Primary
+//@Primary
 @Service("JSON")
 @ConditionalOnProperty(
         value="products.strategy",

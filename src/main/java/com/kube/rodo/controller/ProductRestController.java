@@ -19,6 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/products")
 public class ProductRestController {
+//    @Qualifier("BD")
     @Lazy
     @Autowired
     private ProductService productsService;
